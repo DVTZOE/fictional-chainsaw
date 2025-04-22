@@ -1,0 +1,61 @@
+chapters:
+
+  # The name can be anything
+  - ao3-chapter:
+
+    # The name of the chapter
+    name: An AO3 Chapter
+
+    # This is a link to an external chapter on AO3 in the format of:
+    # link: ao3/works/{work_id}/chapters/{chapter_id}
+    # basically, the part after https://archiveofourown.org
+    link: ao3/works/62882317/chapters/161013958
+
+    # If true, this chapter will be count as an entry point
+    # basically, if the chapter is the first chapter
+    isEntryPoint: true
+
+  - chap1:
+
+    name: Chapter 1
+
+    # This is a link to a chapter this github repository
+    link: repo/chapters/chap1.mdx
+
+    isEntryPoint: true
+
+  - the-epic-chapter:
+
+    name: A very epic chapter
+
+    # This is a link to a chapter from other github repository in the format of:
+    # link: github/{user}/{repo}/{branch}/{path}
+    link: github/DVTZOE/fictional-chainsaw/main/chapters/the-epic-chapter.mdx
+    
+    isEntryPoint: false
+
+linkLists:
+  - linkList1:
+    name: Link List 1
+    links:
+      - db:DVTZOE/ao3-chapter
+      - db:DVTZOE/chap1
+      - db:DVTZOE/the-epic-chapter
+      - db:DVTZOE/ao3-chapter
+  - linkList2:
+    name: Link List 2
+    links:
+      - db:DVTZOE/the-epic-chapter
+      - db:DVTZOE/chap1
+      - db:DVTZOE/ao3-chapter
+      - db:DVTZOE/the-epic-chapter
+links:
+  - link1:
+    first: db:DVTZOE/ao3-chapter
+    last: db:DVTZOE/chap1
+  - link2:
+    first: db:DVTZOE/chap1
+    last: db:DVTZOE/the-epic-chapter
+  - link3:
+    first: db:DVTZOE/the-epic-chapter
+    last: db:DVTZOE/ao3-chapter
